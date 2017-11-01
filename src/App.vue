@@ -8,7 +8,7 @@
 <script>
   import  heads from './components/head.vue'
 export default {
-  name: 'app',
+  name: 'apps',
   components:{heads}
 }
 </script>
