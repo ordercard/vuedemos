@@ -1,15 +1,21 @@
 <template>
-  <div id="apps" style="width: 1600px">
- <heads ></heads >
-    <router-view/>
+  <div id="apps" style="width: 1200px">
+ <!--<heads ></heads >-->
+    <!--<router-view/>-->
+   <con></con>
   </div>
+
 </template>
 
 <script>
+  import Vue from 'vue'
   import  heads from './components/head.vue'
+  import  con from './components/content.vue'
+  import Element from 'element-ui'
+  Vue.use(Element)
 export default {
   name: 'apps',
-  components:{heads}
+  components:{heads,con}
 }
 </script>
 
@@ -21,5 +27,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 0px;
+
 }
 </style>
